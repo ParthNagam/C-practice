@@ -1,0 +1,14 @@
+#include<iostream>
+using namespace std;
+const int MAX=5;
+void printarray( int *ptr);
+int main(){
+    int arr[MAX]={10,20,30,40,50};
+    printarray(arr);
+    return 0;
+}
+void printarray(int *ptr){
+    for(int i;i<MAX;i++){
+        cout<<endl<<*ptr++;
+    }
+}
