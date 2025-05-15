@@ -14,6 +14,19 @@ class cuboid: public rectangle
     cout<<endl<<"Breadth="<<breadth;
     cout<<endl<<"height="<<height;
   }  
+
+  void area(){
+    int area=0;
+    area=(2*((lenght*breadth)+(breadth*height)+(lenght*height)));
+cout<<endl<<"The area="<<area;
+  }
+
+  void volume(){
+    int volume=0;
+    volume=lenght*height*breadth;
+    cout<<endl<<"The volume="<<volume;
+
+  }
 };
 
 int main()
@@ -23,5 +36,8 @@ int main()
     C.breadth=20;
     C.height=25;
     C.show();
+    C.area();
+    C.volume();
+    
     return 0;
 }
