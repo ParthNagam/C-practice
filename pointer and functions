@@ -1,0 +1,17 @@
+#include<iostream>
+using namespace std;
+void sqaure(int *ptr);
+
+int main(){
+    int number=10;
+    cout<<"Before"<<number<<endl;
+    sqaure(&number);
+    cout<<"After"<<number<<endl;
+    return 0;   
+}
+
+void sqaure(int *ptr){
+    int temp=*ptr;
+    temp=temp*temp;
+    *ptr=temp;
+}
