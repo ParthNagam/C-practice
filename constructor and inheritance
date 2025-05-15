@@ -14,11 +14,11 @@ class Base{
 
 class derived:public Base{
 public:
-derived(){
+derived():Base(){
     cout<<endl<<"Default derived constructor";
 
 }
-derived(int b){
+derived(int b):Base(b){
     cout<<endl<<"Derived parameterised constructor"<<b<<endl;
 
 }
@@ -27,6 +27,5 @@ derived(int b){
 int main(){
     derived d1;
     derived d2(9);
-    Base b(10);
     return 0;
 }
