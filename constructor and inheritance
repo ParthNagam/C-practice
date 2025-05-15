@@ -25,7 +25,6 @@ derived(int b):Base(b){
 };
 
 int main(){
-    derived d1;
     derived d2(9);
     return 0;
 }
