@@ -1,0 +1,27 @@
+#include<iostream>
+using namespace std;
+class rectangle{
+    public:
+    int lenght,breadth;
+};
+
+class cuboid: public rectangle
+{
+    public:
+    int height;
+  void show(){
+    cout<<endl<<"lenght="<<lenght;
+    cout<<endl<<"Breadth="<<breadth;
+    cout<<endl<<"height="<<height;
+  }  
+};
+
+int main()
+{
+    cuboid C;
+    C.lenght=15;
+    C.breadth=20;
+    C.height=25;
+    C.show();
+    return 0;
+}
