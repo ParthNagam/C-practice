@@ -1,0 +1,54 @@
+#include<iostream>
+#include<string>
+using namespace std;
+
+
+class mobile{private:
+
+string name;
+
+int RAM;
+
+public:mobile(){name="RealMe";
+
+RAM=4;
+
+}
+
+mobile(string name_a,int RAM_a){name=name_a;
+
+RAM=RAM_a;
+
+}
+
+mobile(mobile &mob2){name=mob2.name;
+
+RAM=mob2.RAM;
+
+}
+
+void getdata(){
+    cout<<endl<<"Name="<<name;
+
+cout<<endl<<"RAM="<<RAM;
+
+}
+
+};
+
+int main(){
+
+mobile mob;
+
+mobile mob2("VIVO",6);
+
+mobile mob3(mob2);
+
+mob.getdata();
+mob2.getdata();
+mob3.getdata();
+
+
+return 0;
+
+}
