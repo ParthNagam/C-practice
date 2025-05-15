@@ -1,0 +1,32 @@
+#include<iostream>
+using namespace std;
+class Base{
+    public:
+    Base(){
+        cout<<endl<<"Base default constructor"<<endl;
+
+    }
+    Base(int b){
+        cout<<endl<<"Base Parameterised Constructor"<<b<<endl;
+    }
+
+};
+
+class derived:public Base{
+public:
+derived(){
+    cout<<endl<<"Default derived constructor";
+
+}
+derived(int b){
+    cout<<endl<<"Derived parameterised constructor"<<b<<endl;
+
+}
+};
+
+int main(){
+    derived d1;
+    derived d2(9);
+    Base b(10);
+    return 0;
+}
