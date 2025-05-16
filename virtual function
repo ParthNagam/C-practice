@@ -1,0 +1,33 @@
+#include<iostream>
+using namespace std;
+
+class Base{
+    public:
+    virtual void show(){
+  cout<<"Base class"<<endl;}
+};
+
+class der1:public Base{
+    void show(){
+        cout<<"Derived 1"<<endl;
+
+    }
+
+};
+
+class der2:public Base{
+    void show(){
+        cout<<"Derived 2";
+
+    }
+};
+
+int main(){
+    Base *ptr;
+    ptr=new der1();
+    ptr->show();
+    ptr=new der2();
+    ptr->show();
+    return 0;
+
+}
