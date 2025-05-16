@@ -1,0 +1,25 @@
+#include<iostream>
+#include<string>
+using namespace std;
+class person{
+    private:
+    int age;
+    string name;
+    public:
+    person(int age,string name){
+       this-> age=age;
+       this -> name=name;
+    }
+
+    void printvalue(){
+        cout<<endl<<"Name:"<<name;
+        cout<<endl<<"Age:"<<age;
+
+    }
+};
+
+int main(){
+    person p(19,"Parth");
+    p.printvalue();
+    return 0;
+}
